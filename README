@@ -1,0 +1,16 @@
+jersey.web is a group of additional helper libraries used to create web applicationsu sing Jersey/JAX-RS. 
+
+Planned libraries include:
+
+	jersey.web.core - Core of the HTML view support libraries
+	jersey.web.validation - Advanced Bean validation and binding
+
+Progress:
+	jersey.web.core
+
+		Proof-of-concept 100%
+		API Design 50%
+		Documentation 10%
+
+	jersey.web.validation 0%
+	
