@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	<ux:comment>
+		Do a jxpath lookup on the extra component 'header' for the attribute 'name'.
+		These components specified are, by default, attached to the 
+		JAX-RS resource using annotations. The main resource
+		is responsible for all the primary content while the
+		components are responsible for additional/presentational 
+		information. Components can be looked up different ways
+		by prefixing them with a specifier.For example,
+			<ux:simple ux:component="props:classpath:path.to.filename.properties" name="some.property"/>
+		loads a property file from the classpath and looks up the property called 'some.property' on it.
+		We can also look at system properties or property objects in some application-provided context:
+			<ux:simple ux:component="props:system:path.to.filename.properties" name="some.property"/>
+			<ux:simple ux:component="props:context:some-property-object" name="some.property"/>
+	</ux:comment>
+	<jx:path path="name" ux:component="header"/>
+</title>
+</head>
+<body>
+	<ux:comment>
+		Again, we lookup the same attribute on header.
+	</ux:comment>
+	<h1><jx:path path="name" ux:component="header"/></h1>
+
+	
+	<ux:comment>
+		We lookup the path 'message' on the default component, which is the
+		entity we've been given from the Jersey/JAX-RS call.
+	</ux:comment>
+	<p>Message: <jx:path path="message"/> </p>
+
+
+	<ux:comment>
+		We can set an attribute by using the ux:atribute tag, and using
+		an arbitrary value inside of it to add to the parent tag.
+	</ux:comment>
+	<a>
+		<ux:attribute name="href">
+			<jx:path path="link"/>
+		</ux:attribute>
+		Link Content
+	</a>
+
+	<ux:comment>
+		We can do it a shorter way using ux:attribute on the tag. ux:attribute is a core
+		tag that tells any element: if you give me a String, apply that string to the parent element.
+	</ux:comment>
+	<a>
+		<jx:path path="link" ux:attribute="href"/>
+		Link Content
+	</a>
+
+	<ux:comment>
+		We can also use the uxh namespace to mark a simple html
+		element as having additional logic attached to it. However,
+		it may turn out to be much slower than other methods.
+
+		In this example, we add the logic of jx:path to this a link. Any 
+		attribute using a registered namespace will be passed to jx:path, so
+		jx:path gets the 'link' attribute and the 'ux:attribute' attribute.
+
+		One way to not make this slow, I imagine, would be to apply a compile-time
+		or startup-time translation of the HTML tree from what we see below
+		to what we see above. This can be done by the same rules that parse
+		and execute these complex elements. A lot of that may depend
+		on whether the html parsing objects provided by jericho are thread-safe.
+
+		The bottom element is one we would like to only process once, as it requires a
+		full tree traversal to find attributes.
+
+		Worst case scenerio: implement something akin to JSP (yikes) that turns these into fast(er) calls.
+	</ux:comment>
+	<ux:enable module="uxh"/>
+	<uxh:a uxh:tag="jx:path" uxh:path="link" uxh:ux_attribute="href" >Link content</uxh:a>
+	<a uxh:tag="jx:path" uxh:path="link" uxh:ux_attribute="href" >Link content</a> 
+
+
+</body>
+</html>
