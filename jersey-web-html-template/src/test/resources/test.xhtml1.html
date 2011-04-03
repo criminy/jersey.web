@@ -2,10 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<ux:comment>
-			A simple (X)HTML4 page with an invalid tag.
+			A simple XHTML page (was previously HTML4 strict)
 		</ux:comment>
 		
-		
+		<ux:comment>
+			If we use an HTML4 doctype above, we still have to define
+			meta with a closing tag. HOWEVER, when the 
+			page is written to the client, the meta tag will have no
+			closing tag. This is so we can parse valid XHTML but output 
+			valid HTML or XHTML.
+		</ux:comment>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	
 		<ux:comment>
@@ -16,6 +22,19 @@
 	</head>
 	<body>
 		<p>
+			<ux:comment>
+				We define a couple of attributes. These attributes
+				are placed on the parent element when rending, so p. 
+				The first one defines a constant
+				value for the attribute 'id'. The second one generates
+				the 'class' tag by repeating the foreach call. By default,
+				attribute execuation strips all whitespace. So 'class' becomes
+				'xx'. There are multiple modes you can set with the 'whitespace' attribute:
+					whitespace=default or compact: 'xx'
+					whitespace=single-space: 'x x'
+					whitespace=expand: 'x       x'  using literal text spacing
+					
+			</ux:comment>
 			<ux:attribute name="id" value="para1"/>
 			<ux:attribute name="class">
 						<jx:foreach count="2">								
