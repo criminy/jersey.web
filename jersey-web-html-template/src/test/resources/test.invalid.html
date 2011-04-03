@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<ux:comment>
+			A simple (X)HTML4 page.
+		</ux:comment>
+		
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+		<ux:comment>
+			Define the title using the 'title' attribute
+			on the primary component.
+		</ux:comment>
+		<title><jx:path path="title" /></title>
+	</head>
+	<body>
+		<p>
+		<ux:comment>
+			Run this block of stuff 4 times.
+		</ux:comment>
+		<jx:foreach count="4">
+			<a>HELLO</a>
+			
+			<ux:comment>
+				Get the 'idx' attribute on the primary component.
+			</ux:comment>
+			
+			<jx:path path="idx" />
+		</jx:foreach>
+		
+				
+		<ux:comment>
+			This tag is invalid, it should choke the parser.
+		</ux:comment>
+		<jx:invalidTag>
+		
+		</jx:invalidTag>
+		
+		</p>		
+</body>
+</html>

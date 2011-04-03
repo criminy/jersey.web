@@ -2,7 +2,11 @@ jersey.web is a group of additional helper libraries used to create web applicat
 
 Planned libraries include:
 
+        jersey.web.template - HTML templating library
 	jersey.web.core - Core of the HTML view support libraries
+	jersey.web.ns.jxpath - JXPath namespace support
+	jersey.web.ns.ognl - OGNL Namespace support
+	jersey.web.ns.el - EL namespace support
 	jersey.web.validation - Advanced Bean validation and binding
 
 Progress:
@@ -11,6 +15,12 @@ Progress:
 		Proof-of-concept 100%
 		API Design 50%
 		Documentation 10%
+         
+        jersey.web.template
+		Proof-of-concept: 100%
+                Core Design: 90%
+		API/SPI Design: 50%
+		Documentation: 0%
 
 	jersey.web.validation 0%
 	

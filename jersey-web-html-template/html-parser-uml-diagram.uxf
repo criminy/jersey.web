@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>240</x>
+      <y>528</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>ForEachTag
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>624</x>
+      <y>432</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>/Statement/
+bg=#eeff00</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>344</x>
+      <y>528</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>PathTag
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>456</x>
+      <y>528</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>...
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>472</x>
+      <y>416</y>
+      <w>168</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;112;24;24;152;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>248</x>
+      <y>416</y>
+      <w>392</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;112;136;24;376;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>360</x>
+      <y>416</y>
+      <w>280</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;112;24;24;264;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>208</x>
+      <y>496</y>
+      <w>368</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>sample namespace
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>568</x>
+      <y>344</y>
+      <w>160</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>DocumentStatement
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>56</x>
+      <y>48</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Internal
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>656</x>
+      <y>392</y>
+      <w>96</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>48;48;80;40;40;24;24;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>640</x>
+      <y>344</y>
+      <w>40</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;88</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>592</x>
+      <y>176</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DefaultHandler&gt;&gt;
+HtmlStatementSaxParser
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>608</x>
+      <y>192</y>
+      <w>88</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Creates</panel_attributes>
+    <additional_attributes>48;152;48;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>56</x>
+      <y>80</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>API
+bg=#eeff00</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>264</x>
+      <y>160</y>
+      <w>200</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>TemplateEngine
+--
+renderTemplate(filename,writer)
+--
+Responsibilities
+-- For DocumentStatement
+--- Loading
+--- Caching
+--- Rendering
+bg=#eeff00</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>632</x>
+      <y>128</y>
+      <w>40</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>24;48;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>512</x>
+      <y>128</y>
+      <w>132</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+r1=          0..*
+
+             Caches
+ </panel_attributes>
+    <additional_attributes>72;216;64;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>64</x>
+      <y>376</y>
+      <w>128</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>/@TagHandler/
+--
+value()
+prefix()
+bg=#ffaaaa</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>272</x>
+      <y>304</y>
+      <w>200</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>NamespaceDatabase
+--
+getTags()
+getTag(String name) : Statement
+--
+Responsibilities
+-- Finds and Stores tag classes
+bg=#cccccc</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>448</x>
+      <y>336</y>
+      <w>192</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+programmer-defined tags</panel_attributes>
+    <additional_attributes>176;104;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>112</x>
+      <y>400</y>
+      <w>112</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>96;136;24;136;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>296</x>
+      <y>72</y>
+      <w>160</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Implementations of 
+TemplateEngine can
+(and do) act as a facade 
+for the library user.
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>112</y>
+      <w>40</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>24;24;24;48</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>440</x>
+      <y>104</y>
+      <w>144</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>24;112;128;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>448</x>
+      <y>128</y>
+      <w>144</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>24;176;128;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>40</x>
+      <y>176</y>
+      <w>192</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>The design needs the
+SaxTemplateEngine to 
+NOT require NSDatabase
+in its' composition. Maybe
+an abstract class (and not an
+interface) for TemplateEngine?
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>544</x>
+      <y>80</y>
+      <w>256</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Sax implementation
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>568</x>
+      <y>112</y>
+      <w>184</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>SaxTemplateEngine
+HtmlStatementSaxParser
+bg=#cccccc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>56</x>
+      <y>112</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>SPI
+bg=#ffaaaa</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
